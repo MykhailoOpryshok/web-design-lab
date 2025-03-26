@@ -1,0 +1,168 @@
+* {
+    font-family: 'Fixel', Arial, sans-serif;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Fixel';
+    src: url('../resources/fonts/FixelText-Black.woff2') format('woff2'),
+         url('../resources/fonts/FixelText-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FixelThin';
+    src: url('../resources/fonts/FixelText-Thin.woff2') format('woff2'),
+         url('../resources/fonts/FixelText-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    padding-top: 70px;
+    background-color: #98D2C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #98D2C0;
+    background-image: linear-gradient(to bottom, rgba(79, 149, 157, 1), rgba(79, 149, 157, 0));
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profileIcon, .homeIcon{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+button {
+    font-family: 'FixelThin', Arial, serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #205781;
+    -webkit-text-stroke: 1px white;
+    min-width: 140px;
+}
+button:hover {
+    background-color: #1a4a6d;
+    transform: scale(1.05);
+}
+button:active{
+    transform: scale(0.95);
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+}
+
+.features, .updates {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features li {
+    margin: 5px 0;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.features li:hover {
+    background: #dfe6e9;
+    transform: scale(1.05);
+}
+
+.features li:active {
+    background: #b2bec3;
+    transform: scale(0.95);
+}
+
+p, li{
+    font-family: 'FixelThin', Arial, serif;
+    font-size: 20px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+main > div {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

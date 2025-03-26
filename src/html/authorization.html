@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/authorization.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img id ="indexButton" class = "homeIcon" src="../resources/home.png" alt = "">
+            <button id="aboutButton">Про нас</button>
+            <button id="myTasksButton">Мої завдання</button>
+            <button id="projectsButton">Проєкти</button>
+            <button id="analyticsButton">Аналітика</button>
+        </div>
+        <div class="right">
+            <button id="authorizationButton">Авторизація</button>
+            <button id="registrationButton">Реєстрація</button>
+            <img class="profileIcon" src="../resources/profile_icon.png" alt = "">
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <h2>Авторизація</h2>
+            <form action="#" method="POST">
+                <input type="text" name="username" placeholder="Логін" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button type="submit">Увійти</button>
+            </form>
+            <button>Реєстрація</button>
+        </div>
+    </main>
+</body>
+<script src="../scripts/index.js"></script>
+</html>
